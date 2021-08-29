@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding:0;
+    margin: 0;
+}
+
+
+
+.intro{
+    height: 100vh;
+    width: 100vw;
+    background:#050505;
+    position: relative;
+}
+
+.navbar{
+    width: 95vw;
+    height: 3.5rem;
+    display: flex;
+    margin:auto;
+    animation: on-navLoad 1500ms ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes on-navLoad {
+    0%{
+        transform:translateY(-100%)
+    }
+
+    100%{
+        transform: translateY(3.5%);
+    }
+}
+
+
+
+.basic{
+    height: 100%;
+    width: 55%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+
+.basic >div{
+    height: 100%;
+    width: 16%;
+    color: #EFFFEF;
+    text-align: center;
+    padding: 15px;
+    font-size: 21px;
+    font-family: 'Hina Mincho', serif;
+    transition: transition .2s ease;
+}
+
+
+.contact{
+    width: 45%;
+    display: flex;
+    flex-direction: flex-end;
+    justify-content: flex-end;
+}
+
+.contact-me{
+    height: 100%;
+    width: 20%;
+    color: #EFFFEF;
+    text-align: center;
+    padding: 15px;
+    font-size: 21px;
+    font-family: 'Hina Mincho', serif;
+    transition: transition .3s ease;
+}
+
+.basic >div:hover {
+    color: #F07609;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.r-a {
+   text-decoration:none;
+   color:white;
+}
+
+
+
+.contact >div:hover{
+    color: #F07609;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.socials{
+    width: 66px;
+    height: 35%;
+    position: absolute;
+    bottom: 3%;
+    left: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    animation:socials-animate 3800ms ease-in;
+}
+
+@keyframes socials-animate{
+    0%{
+        transform: translateY(-10px);
+        opacity:0;
+    }
+
+    100%{
+        transform: translateY(10px);
+        opacity: 1;
+    }
+}
+
+
+.socials >div{
+    width: 93%;
+    height: 18%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.socials >div :hover{
+    transition: 0.9s;
+    transform: scale(1.6) rotateY(180deg);
+}
+
+.socials >div >a>i {
+    color: white;
+    font-size:1.5rem;
+}
+
+.github :hover{
+    cursor: pointer;
+    color:lightgray;
+
+}
+
+.twitter :hover{
+    cursor: pointer;
+    color:#5DA9DD;
+}
+
+.linkedln :hover{
+    cursor: pointer;
+    color: #0A66C2;
+}
+
+.insta :hover{
+    cursor: pointer;
+    color :#F14E44
+}
+
+.little-intro{
+    width: 50vw;
+    height: 20rem;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    right: 50%;
+    bottom: 50%
+}
+
+.writing {
+    animation : on-textLoad 2000ms ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes on-textLoad{
+     
+    0%{
+        transform: translateY(-20px);
+        opacity:0;
+    }
+
+    100%{
+        transform: translateY(20px);
+        opacity: 1;
+    }
+}
+
+.writing>p{
+    font-size:1.5rem;
+    color: white;
+    font-family: cursive;
+}
+
+#anime-text{
+   color :#F14E44;
+  font-family: 'Merriweather', serif;
+  font-size:3rem;
+  animation : anime-textAnimate 3500ms ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anime-textAnimate {
+    0%{
+        transform: translateY(-20px);
+        opacity:0;
+    }
+
+    100%{
+        transform: translateY(20px);
+        opacity: 1;
+    }
+}
+
+.intro-btn{
+    margin-top: 30px;
+    width: 12rem;
+    height: 3.5rem;
+    border: 1px solid #F14E44;
+    font-size: 1.2rem;
+    color: #F14E44;
+    background: none
+}
+
+.intro-btn:hover{
+    cursor: pointer;
+    transition: 0.9s;
+    color: black;
+    background:#F14E44;
+    transform: scale(1.1);
+}
+
+.active{
+
+    color:#F14E44!important;
+}

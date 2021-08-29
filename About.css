@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.little-about-me{
+    width: 50vw;
+    height: 30rem;
+    position: absolute;
+    left: 20%;
+    top: 24%;
+    right: 50%;
+    bottom: 50%;
+    animation : on-MeLoad 2000ms ease-in;
+    animation-fill-mode: forwards;
+    /* border: 1px solid red */
+}
+
+@keyframes on-MeLoad{
+     
+    0%{
+        transform: translateY(-20px);
+        opacity:0;
+    }
+
+    100%{
+        transform: translateY(20px);
+        opacity: 1;
+    }
+}
+
+.little-about-me > h1{
+    font-family: 'Arimo', sans-serif;
+    color: white;margin: 0;
+    font-size: 6rem;
+}
+
+.introdution{
+    color: #6B6B6B;
+    font-size:1.6rem;
+    font-family: 'Arimo', sans-serif;
+}
+
+.introdution >p{
+    
+    font-size: 1.4rem;
+    margin-top: -6px;
+}

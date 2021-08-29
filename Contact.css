@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding:0;
+    margin: 0;
+}
+
+
+.lets-talk{
+    height: 100vh;
+    width: 100vw;
+    background:#050505;
+    position: relative;
+}
+
+.form{
+    width: 50vw;
+    height: 40rem;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    right: 50%;
+    bottom: 50%;
+    animation : on-textLoad 2000ms ease-in;
+    animation-fill-mode: forwards;
+
+}
+
+.form >h1{
+    color: white;
+    font-size:3.5rem;
+    font-family: 'Kaisei HarunoUmi', serif;
+    margin-left: 4px;
+}
+
+.form >p{
+    color:#8F8F8F;
+    font-size:1.3rem;
+    font-family: cursive;
+}
+
+.input-form{
+    height: 68%
+}
+
+.input-form >form{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    /* border: 1px solid green; */
+    justify-content: space-around;
+}
+
+.input-form >form>input{
+    border: none;
+    background: #191919;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    height: 16%;
+    width: 70%;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+textarea {
+    border: none;
+    background: #191919;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    width: 70%;
+    margin-bottom: 4px;
+    margin-top: 8px;
+    color: #fff;
+    resize: horizontal
+}
+
+
+
+.form-btn {
+        margin-top: 30px;
+        /* margin-top: 1rem; */
+        width: 10rem;
+        height: 3.5rem;
+        border: 1px solid #F14E44;
+        font-size: 1.3rem;
+        color: #F14E44;
+        background: none;
+        margin-left: 7px;
+        border-radius: 0.8rem
+}
+
+.form-btn:hover{
+    cursor: pointer;
+    transition: 0.9s;
+    color: black;
+    background:#F14E44;
+    transform: scale(1.1);
+}

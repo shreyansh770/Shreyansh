@@ -1,0 +1,35 @@
+            <div class="my-projects">
+
+                <div class="proj">
+                    <div class="img">
+                        <img src="./public/2021-08-28 (2).png" alt="">
+                    </div>
+                    <div class="abot-proj">
+                        <div class="header">
+                            <h4 style="color:#B43D42">Featured Work</h4>
+                            <h2 style="color:white">Reels Clone</h2>
+
+                        </div>
+
+                        <div class="desp">
+                          <p style="color:#f5f6fa;font-size:1.15rem ; text-align: center; padding:  4px ;">A frontend project inspired by instagram reels. With features for commeting , like and sharing the post. User can also look into there own profile and search for there own reels/ videos. Users can signup using there google account.</p>
+                          <div class="stack-used">
+                            <h4>VS CODE</h4>
+                            <h4>REACT</h4>
+                            <h4>HTML</h4>
+                            <h4>CSS</h4>
+                            <h4>JAVASCRIPT</h4>
+                            <h4>FIREBASE</h4>
+
+                          </div>
+                           
+                        </div>
+
+                        <div class="tech-used">
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
